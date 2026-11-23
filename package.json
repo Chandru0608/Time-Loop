@@ -1,0 +1,13 @@
+{
+  "name": "time-loop-last-timeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "start": "npm --prefix backend start"
+  },
+  "devDependencies": { "concurrently": "^9.1.2" }
+}
